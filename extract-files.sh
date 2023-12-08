@@ -14,6 +14,11 @@ function blob_fixup() {
         vendor/lib/libvendor.goodix.hardware.fingerprint@1.0-service.so)
             "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
             ;;
+        vendor/lib/libgf_hal.so)
+            # NOP gf_hal_test_notify_acquired_info()
+            "${SIGSCAN}" -p "00 c6 8f e2 4a ca 8c e2 b0 fa bc e5" -P "00 c6 8f e2 1f 20 03 d5 b0 fa bc e5" -f "${2}"
+            "${SIGSCAN}" -p "78 47 c0 46 00 c0 9f e5 0f f0 8c e0 e0 37 fc ff" -P "78 47 c0 46 1f 20 03 d5 0f f0 8c e0 e0 37 fc ff" -f "${2}"
+            ;;
     esac
 
     # For all ELF files
