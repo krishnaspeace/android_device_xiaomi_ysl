@@ -45,12 +45,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.fingerprints.extension@1.0.vendor \
     libvendor.goodix.hardware.fingerprint@1.0.vendor
-    
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
