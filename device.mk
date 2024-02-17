@@ -51,6 +51,5 @@ $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel
