@@ -49,6 +49,10 @@ PRODUCT_PACKAGES += \
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
 
+# remove unwanted apps
+PRODUCT_PACKAGES += \
+    RemovePkgs
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
