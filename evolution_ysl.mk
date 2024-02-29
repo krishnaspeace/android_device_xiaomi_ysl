@@ -15,6 +15,12 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+TARGET_USES_MINI_GAPPS := true
+EVO_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
