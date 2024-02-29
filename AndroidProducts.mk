@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_ysl.mk
+    $(LOCAL_DIR)/lineage_ysl.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_ysl-user \
-    evolution_ysl-userdebug \
-    evolution_ysl-eng
+    lineage_ysl-user \
+    lineage_ysl-userdebug \
+    lineage_ysl-eng
