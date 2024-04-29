@@ -15,7 +15,18 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+ARGET_SUPPORTS_QUICK_TAP := true
+TARGET_DOESNT_LIKE_FLIPENDO := true
+TARGET_ENABLE_BLUR := true
+RISING_PACKAGE_TYPE := "AOSP"
+RISING_CHIPSET := "Qualcomm Snapdragon 625"
+WITH_GMS := true
 
+#rising
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_CHIPSET="Mediatek Helio G90T" \
+    RISING_MAINTAINER="Krishna"
+    
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
 PRODUCT_NAME := lineage_ysl
