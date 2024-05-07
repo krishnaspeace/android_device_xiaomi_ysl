@@ -30,6 +30,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2018-12-03
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 include vendor/xiaomi/ysl/BoardConfigVendor.mk
