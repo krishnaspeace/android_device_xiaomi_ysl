@@ -133,4 +133,9 @@
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
+
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+        Off by default, since the framebuffer readback used to implement the
+        fading edges is prohibitively expensive on most GPUs. -->
+   <bool name="config_ui_enableFadingMarquee">true</bool>
 </resources>
