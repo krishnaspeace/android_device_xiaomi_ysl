@@ -53,3 +53,9 @@ $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
+    
+# Open Gapps
+GAPPS_VARIANT := nano
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+GAPPS_PRODUCT_PACKAGES += Chrome
+GAPPS_FORCE_BROWSER_OVERRIDES := true
