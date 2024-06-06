@@ -53,3 +53,7 @@ $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
+
+# Gcam 
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt
