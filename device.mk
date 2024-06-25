@@ -57,9 +57,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
 
-# Gcam 
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
 
 # Copyright 2021 The Android Open Source Project
 #
