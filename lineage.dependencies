@@ -6,5 +6,9 @@
   {
     "repository": "android_kernel_xiaomi_msm8953",
     "target_path": "kernel/xiaomi/msm8953"
+  },{
+   "repository": "packages_apps_GCamGOPrebuilt",
+   "target_path": "packages/apps/GCamPrebuilt"
   }
+
 ]
